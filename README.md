@@ -5,4 +5,4 @@ This project features a parallelised version of the matched filter algorithm pro
 
 The parallelization is performed at GPU level by using PyCUDA.
 
-# ! WORK IN PROGRESS !
+# ⚠️ WORK IN PROGRESS ⚠️
