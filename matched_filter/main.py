@@ -1,4 +1,3 @@
-import numpy as np
 import cupy as cp
 
 def compute_threshold(s, h):

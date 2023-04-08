@@ -1,6 +1,4 @@
-import numpy as np
 import cupy as cp
-import matplotlib.pyplot as plt
 
 def generate_signals(filePath):
     snr = 10
@@ -30,20 +28,5 @@ def generate_signals(filePath):
 
     # random_signal = np.random.normal(scale=1, size=len(time))
     # random_signal = random_signal + noise * scale_factor
-
-    _, (ax1, ax2) = plt.subplots(2, 1)
-
-    ax1.plot(time, signal)
-    ax1.set_xlabel('Time')
-    ax1.set_ylabel('Clean Signal Amplitude')
-    ax1.set_title('Clean Signal Plot')
-
-    ax2.plot(time, noisy_signal)
-    ax2.set_xlabel('Time')
-    ax2.set_ylabel('Noisy Signal Amplitude')
-    ax2.set_title('Noisy Signal Plot')
-
-    plt.tight_layout()
-    plt.show()
 
     return signal, noisy_signal
