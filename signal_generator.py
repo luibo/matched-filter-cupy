@@ -5,7 +5,7 @@ def generate_signals(filePath):
 
     with open(filePath, 'r') as file:
         contents = file.read()
-    
+
     signal = cp.array([float(x) for x in contents.split()])
 
     # Close the file
@@ -26,7 +26,7 @@ def generate_signals(filePath):
 
     time = [t for t in range(len(signal))]
 
-    # random_signal = np.random.normal(scale=1, size=len(time))
+    # random_signal = cp.random.normal(scale=1, size=len(time))
     # random_signal = random_signal + noise * scale_factor
 
     return signal, noisy_signal
