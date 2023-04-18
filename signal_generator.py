@@ -23,9 +23,7 @@ def generate_signals(filePath):
 
     # Add the noise to the signal
     noisy_signal = signal + noise * scale_factor
-
-    time = [t for t in range(len(signal))]
-
+    
     # random_signal = cp.random.normal(scale=1, size=len(time))
     # random_signal = random_signal + noise * scale_factor
 
