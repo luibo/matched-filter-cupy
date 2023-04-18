@@ -37,11 +37,11 @@ def main():
         print("\n*** Reference signal detected in noisy input signal ***")
     else:
         print("\n*** Signal not detected ***")
+
     end_event.record()
     end_event.synchronize()
     elapsed_time_ms = cp.cuda.get_elapsed_time(start_event, end_event)
-    print(f"Elapsed time: {elapsed_time_ms:-3f}ms")
-
+    print(f"\nElapsed time: {elapsed_time_ms:-3f}ms")
 
 if __name__ == '__main__':
     main()
